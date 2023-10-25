@@ -6,6 +6,11 @@ require('dotenv').config();
 
 app.use(express.static('public'));
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+})
+
 const uri = process.env.MONGODB_URI;
 
 app.get('/api/latest-crypto-price', async (req, res) => {

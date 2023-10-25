@@ -4,6 +4,8 @@ const port = 3000;
 const { MongoClient } = require('mongodb')
 require('dotenv').config();
 
+app.use(express.static('public'));
+
 const uri = process.env.MONGODB_URI;
 
 app.get('/api/latest-crypto-price', async (req, res) => {

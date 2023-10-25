@@ -1,0 +1,32 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Editor/IDE-specific files
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+*.swm
+*~
+
+# Compiled source files
+dist/
+*.class
+*.war
+*.jar
+
+# Mac-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db

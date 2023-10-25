@@ -30,6 +30,3 @@ dist/
 # Windows-specific files
 Thumbs.db
 ehthumbs.db
-
-package.json
-package-lock.json
